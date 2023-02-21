@@ -1,0 +1,8 @@
+<ng-container [formGroup]="form">
+  <input
+    #appQuickInfo="appQuickInfo"
+    appQuickInfo
+    formControlName="myControl"
+  />
+  <button (click)="appQuickInfo.onShowInfo()">Show Info</button>
+</ng-container>
